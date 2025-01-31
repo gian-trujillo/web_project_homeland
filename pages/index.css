@@ -1,163 +1,12 @@
 @import url(../vendor/normalize.css);
-@font-face {
-  font-family: "inter", sans-serif;
-  src: url(../vendor/fonts/web/Inter-Regular.woff2);
-}
+@import url(../vendor/fonts.css);
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/intro.css);
+@import url(../blocks/lead.css);
+@import url(../blocks/footer.css);
 
-.page {
-  margin: auto;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  max-width: 1600px;
-  background-color: #2a2c2f;
-  color: white;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 34px;
-  padding-bottom: 91px;
-  /*width: ;*/
-  height: 70px;
-}
-
-.header__logo {
-  width: 255px;
-  height: 69px;
-}
-
-.lead {
-  max-width: 984px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-}
-
-.lead__title {
-  max-width: 720px;
-  /*max-height: 200px;*/
-  margin: 0 0 32px;
-  /*position: absolute;
-  width: 720px;
-  height: 200px;
-  left: 280px;
-  top: 194px;*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 96px;
-  line-height: 1;
-  /* or 104% */
-  text-align: center;
-  /*color: #ffffff;*/
-}
-
-.lead__subtitle {
-  margin: 0 0 64px;
-  max-width: 720px;
-  /*max-height: 72px;*/
-  /*position: absolute;
-  width: 720px;
-  height: 72px;
-  left: 280px;
-  top: 426px;*/
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 1.2;
-  /* or 120% */
-  text-align: center;
-  /*color: #ffffff;*/
-}
-
-.lead__image {
-  max-width: 984px;
-  max-height: 615px;
-  margin-bottom: 92px;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  max-width: 984px;
-  margin: auto;
-  /*margin: 0 0 92px 148px;*/
-}
-
-.intro__container {
-  max-width: 830px;
-}
-
-.intro__title {
-  margin: 0 0 40px;
-  max-width: 830px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 54px;
-  line-height: 1.07;
-}
-
-.intro__quote {
-  max-width: 738px;
-  margin: 0 0 10px;
-  /*position: absolute;
-width: 738px;
-height: 135.66px;
-right: 394px;
-top: 1482.91px;*/
-
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.42;
-  /* or 142% */
-
-  /*color: #FFFFFF;*/
-}
-
-.intro__quote-author {
-  max-width: 732px;
-  margin: 0;
-  text-align: right;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.42;
-}
-
-.intro__text {
-  max-width: 722px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.63;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  width: 194px;
-  /*height: 16px;*/
-  margin: 0 auto;
-}
-
-.footer__copyright {
-  margin: 0 0 24px;
-}
-
-@media screen and (max-width: 1024px) {
-  /*.page {
-    max-width: 1280px;*/
-
+@media screen and (max-width: 1279px) {
   .header {
     padding-top: 30px;
     padding-bottom: 90px;
@@ -177,8 +26,6 @@ top: 1482.91px;*/
     line-height: 1.05;
     margin: 0 0 25px;
     max-width: 530px;
-
-    /*color: #ffffff;*/
   }
 
   .lead__subtitle {
@@ -209,11 +56,13 @@ top: 1482.91px;*/
   }
 
   .intro__quote {
-    margin: 0 0 -8px;
     max-width: 720px;
+    margin: 0;
   }
 
   .intro__quote-author {
+    position: relative;
+    top: -8px;
     max-width: 720px;
   }
 
@@ -223,5 +72,69 @@ top: 1482.91px;*/
   }
 }
 
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+
+  .header__logo {
+    max-width: 188px;
+    max-height: 52px;
+  }
+
+  .lead {
+    max-width: 288px;
+  }
+
+  .lead__title {
+    max-width: 228px;
+    margin: 0 0 16px;
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .lead__subtitle {
+    max-width: 288px;
+    margin: 0 0 40px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .lead__image {
+    max-width: 320px;
+    max-height: 200px;
+    margin-bottom: 64px;
+  }
+
+  .intro {
+    max-width: 288px;
+  }
+
+  .intro__container {
+    max-width: 288px;
+  }
+
+  .intro__title {
+    margin: 0 0 40px;
+    max-width: 288px;
+
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .intro__quote {
+    max-width: 288px;
+    margin: 0 0 10px;
+    line-height: 1.25;
+  }
+
+  .intro__quote-author {
+    max-width: 288px;
+  }
+
+  .intro__text {
+    max-width: 288px;
+    margin: 32px 0 64px;
+  }
 }
