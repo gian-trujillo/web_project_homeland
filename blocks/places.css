@@ -63,7 +63,7 @@
   grid-column-end: 3;
 }
 
-.places__website_title {
+.places__website-title {
   margin: 0 0 8px;
   font-family: Inter;
   font-weight: 400;
@@ -73,7 +73,7 @@
   color: #aaaaaa;
 }
 
-.places__website_text {
+.places__website-text {
   margin: 0;
   font-family: Inter;
   font-weight: 400;
@@ -134,7 +134,7 @@
     margin: 0 0 20px;
   }
 
-  .places__website_text {
+  .places__website-text {
     margin-bottom: 1px;
   }
 
